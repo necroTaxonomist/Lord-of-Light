@@ -1,0 +1,34 @@
+PATCH NOTES
+4/2/2017
+===========
+
+General Changes:
+	-added lag to raising block
+	-added lag to the end of a dash
+	-increased lag on lowering block by 50%
+
+Agni:
+	-increased diameter of standing punch by 33%
+	-increased hitbox duration of aerial kick by 67%
+	-changed KB angle on fire wall from 45d to 0d
+
+Nirriti:
+	-increased walk speed by 11%
+	-increased jump speed by 10%
+	-increased diameter of standing punch by 8%
+	-increased diameter of aerial punch by 8%
+	-opponents' zombies can now hit each other
+
+Shiva:
+	-reduced jump speed by 9%
+	-increased falling acceleration by 15%
+	-increased endlag on aerial special by 25%
+	-reduced speed of trident projectile by 20%
+	-changed KB angle on explosion from 75d to 0d
+	-reduced explosion diameter by 33%
+	-reduced explosion damage by 25%
+
+Ratri:
+	-increased run speed by 20%
+	-increased jump speed by 20%
+	-increased damage on night cloud by 100%
