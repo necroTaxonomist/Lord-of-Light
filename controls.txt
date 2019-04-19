@@ -1,0 +1,16 @@
+PLAYER 1
+move = wasd
+block = t
+punch = f
+kick = g
+special = h
+
+PLAYER 2
+move up = o
+move left = k
+move down = l
+move right = ;
+block = up
+punch = left
+kick = down
+special = right

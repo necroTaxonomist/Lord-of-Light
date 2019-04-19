@@ -75,6 +75,9 @@ isZombie = true;
 audio_play_sound(snd_raise,0,false);
 
 isHit = false;
+
+waiting = 0;
+max_wait_time = 30;
 </string>
           </argument>
         </arguments>
@@ -146,7 +149,7 @@ if (!fighter_on_ground(self))
 }
 else
 {
-    if (hspeed == 0)
+    if (hspeed == 0 &amp;&amp; waiting == 0)
     {
         x += global.BASE_WALK_SPEED * walk_speed * facing;
         walkTimer += (global.BASE_WALK_SPEED * walk_speed) / (width / 2);
@@ -194,10 +197,19 @@ if (x - width/2 &lt;= -global.WORLD_WIDTH/2)
         spawnTimer = timerMax * 2;
 }
 
-if (hitbox.damage_active == 0)
+if (hitbox.damage_active == 0 &amp;&amp; waiting == 0)
 {
-    if (spawnTimer &lt;= timerMax)
-        spawnTimer = timerMax * 2;
+    //if (spawnTimer &lt;= timerMax)
+        //spawnTimer = timerMax * 2;
+    waiting = max_wait_time;
+}
+
+if (waiting &gt; 0)
+{
+    waiting -= 1;
+    
+    if (waiting == 0)
+        hitbox.damage_active = 1;
 }
 </string>
           </argument>

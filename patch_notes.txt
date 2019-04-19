@@ -32,3 +32,22 @@ Ratri:
 	-increased run speed by 20%
 	-increased jump speed by 20%
 	-increased damage on night cloud by 100%
+
+PATCH NOTES
+4/19/2019
+===========
+
+Shiva:
+	-reduced jump speed
+	-reduced falling acceleration
+	-reduced air speed
+	-air special leaves Shiva suspended
+	-added lag to ground special
+
+Agni:
+	-improved disjoint on most hitboxes
+	-increased startup lag on aerial punch
+	-increased damage on aerial punch
+
+Nirriti:
+	-zombies stop in place briefly after hitting the opponent

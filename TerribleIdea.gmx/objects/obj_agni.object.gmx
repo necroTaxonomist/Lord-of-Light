@@ -72,7 +72,7 @@ fighter_add_attack(self.id, 0, 5, 10, 10, create_hitbox(self.id, 1, 1, 1, 1.25),
 
 //kick
 attackSprites[1] = spr_agni_kick;
-fighter_add_attack(self.id, 1, 10, 10, 5, create_hitbox(self.id, .75, .75, .75, 1), 7.5, .1*pi);
+fighter_add_attack(self.id, 1, 10, 10, 5, create_hitbox(self.id, 1.25, .75, .75, 1), 7.5, .1*pi);
 
 //special
 attackSprites[2] = spr_agni_special;
@@ -80,11 +80,11 @@ fighter_add_projectile(self.id, 2, 10, 5, 10, obj_fireball);
 
 //air punch
 attackSprites[3] = spr_agni_air_punch;
-fighter_add_attack(self.id, 3, 10, 10, 15, create_hitbox(self.id, 2, 2, .25, 1.6), 7.5, -pi/6);
+fighter_add_attack(self.id, 3, 20, 10, 15, create_hitbox(self.id, 2.25, 2, .25, 1.25), 9, -pi/6);
 
 //air kick
 attackSprites[4] = spr_agni_air_kick;
-fighter_add_attack(self.id, 4, 5, 25, 15, create_hitbox(self.id, 1, 1, 1, .9), 5, 0);
+fighter_add_attack(self.id, 4, 5, 25, 15, create_hitbox(self.id, 1.25, 1, 1, .9), 5, 0);
 
 //air special
 attackSprites[5] = spr_agni_air_special;

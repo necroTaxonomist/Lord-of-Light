@@ -128,7 +128,7 @@ global.p1Ctrl = instance_create(0,0,obj_kbd1);
 global.p2Ctrl = instance_create(0,0,obj_kbd2);
 
 global.playMusic = true;
-global.badMidis = true;
+global.badMidis = false;
 
 randomize();
 </string>
